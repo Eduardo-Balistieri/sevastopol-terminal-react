@@ -1,0 +1,43 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 10%;
+    background: #08bd74;
+    width: 97%;
+    height: 40px;
+    margin: 1vh auto;  
+    border-radius: 2px;
+    margin-bottom: 55px;
+    box-shadow: 0 0 2px #01b46d;
+}
+
+.header > p {
+    margin: 0 15px;
+    letter-spacing: -1px;
+    color: #0b2e15;
+    font-size: 2.5rem;
+    text-align: left;
+    text-shadow: 0 0 2px #0b2e15;
+}
+
+.header > div {
+    justify-self: end;
+    align-self: center;
+    margin-right: 7%;
+    height: 28px;
+    width: 28px;
+    background: #007542;
+    border-radius: 1px;
+    box-shadow: 0 0 3px #007743;
+}
+
+/*****************************/
+
+@media screen and (max-width: 450px) { 
+    .header > p {
+        align-self: center;
+        font-size: 8.7vw;
+    }
+    .header > div {
+        margin-right: 1.5vw;
+    }
+}

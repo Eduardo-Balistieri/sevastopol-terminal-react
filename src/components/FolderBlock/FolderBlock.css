@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.gridSelected {
+    height: 180px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 4px #d8d8d8;
+}
+
+.folderBlock {
+    height: 180px;
+    cursor: pointer;
+    border-radius: 1px;
+    border-style: solid;
+    padding-top: 13px;
+    color: #e2e2e2;
+    text-shadow: 0 0 2px #cecece;
+}
+
+.folderBlock span {
+    padding-left: 10px;
+    font-size: 40px
+}
+
+.folderBlockNotSelected {
+    border-color: #01af69;
+    box-shadow: 0 0 3px #01af69;
+    grid-column: 1/-1;
+    margin-left: 5%;
+    width: 90%;
+    transition-property: border-color, background, box-shadow, color, text-shadow;
+    transition-duration: 0.7s;
+}
+
+.folderBlockNotSelected:hover {
+    border-color: white;
+    background: white;
+    box-shadow: 0 0 3px #cecece;
+    color: #0c250d;
+    text-shadow: 0 0 3px #0b240c;
+    transition: 0.7s;
+}
+
+.folderBlockSelected {
+    border-radius: 0;
+    border-color: white;
+    box-shadow: 0 0 3px #cecece;
+}
+
+/*****************************/
+
+@media screen and (max-width: 700px) {
+    .gridSelected {
+        height: 25vw;
+    }
+    .folderBlock {
+        height: 25vw;
+    }
+    .folderBlock span {
+        font-size: 5vw
+    }
+}

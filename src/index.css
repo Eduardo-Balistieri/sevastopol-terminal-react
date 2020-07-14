@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Coder's Crux"; 
+  src: url("//db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.ttf") format("truetype")
+}
+
+body {
+  user-select: none;
+  font-family: "Coder's Crux";
+  margin: 0;
+  padding: 0;
+  background: #001601;
+}

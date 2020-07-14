@@ -1,0 +1,51 @@
+.gridStructure {
+    display: grid;
+    grid-template-columns: 28% 5% 67%;
+    grid-template-areas: 'folder canvas info';
+}
+
+.folders {
+    grid-area: folder;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: 5% 90% 5%;
+}
+
+.sectionTitle {
+    grid-column: 1/-1;
+    letter-spacing: -1px;
+    color: #01bb71;
+    padding-top: 80px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 3px #007445;
+}
+
+.sectionTitle span {
+    font-size: 40px;
+    text-align: left;
+    padding-left: 2vw;
+}
+
+.canvas {
+    grid-area: canvas;
+}
+
+.info {
+    grid-area: info;
+}
+
+/*****************************/
+
+@media screen and (max-width: 700px) {
+    .gridStructure {
+        grid-template-columns: 30% 1fr;
+        grid-template-areas: 'folder info';
+        grid-column-gap: 15px;
+    }
+    .sectionTitle span {
+        font-size: 5.8vw
+    }
+    .canvas {
+        display: none;
+    }
+}

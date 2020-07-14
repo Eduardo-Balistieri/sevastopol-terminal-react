@@ -1,0 +1,84 @@
+.loadingScreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loadingScreen img {
+    margin-top: 20vh;
+    width: 55%;
+    pointer-events:none
+}
+ 
+.loadingBar {
+    border-style: solid;
+    border-color: #00b959;
+    border-width: 1px;
+    height: 1.3rem;
+    width: 45vw;
+    margin-top: 50vh;
+}
+
+.loadingBar div {
+    background: #00cb57;
+    height: 100%;
+    width: 0%;
+    animation: incrementWidth 3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+} 
+
+.bottomText {
+    margin-top: 1rem;
+}
+
+.bottomText p {
+    font-size: 190%;
+    color: #00cb57;
+}
+
+/*****************************/
+
+@media screen and (max-width: 950px) {
+    .loadingBar {
+        height: 2vw;
+    }
+    .bottomText p {
+        font-size: 3.5vw;
+    }
+}
+
+@keyframes incrementWidth {
+    0% {
+        width: 0%;
+    }
+    5% {
+        width: 15%;
+    }
+    15% {
+        width: 30%;
+    }
+    33% {
+        width: 33%;
+    }
+    38% {
+        width: 48%;
+    }
+    48% {
+        width: 63%;
+    }
+    66% {
+        width: 66%;
+    }
+    71% {
+        width: 81%;
+    }
+    81% {
+        width: 96%;
+    }
+    100% {
+        width: 100%;
+    }
+}

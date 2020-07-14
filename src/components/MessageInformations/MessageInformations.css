@@ -1,0 +1,67 @@
+.solidLine {
+    background: #4bbf75;
+    height: 4%;
+    width: 100%;
+    box-shadow: 0 0 1px #4bbf75;
+}
+
+.box {
+    width: 95%;
+    height: 56%;
+    border-style: solid;
+    border-color: #4bbf75;
+    border-radius: 1.5px;
+    box-shadow: 0 0 4px #23613a;
+    overflow: auto;
+}
+
+.box p {
+    white-space: pre-line;
+    padding: 2%;
+    color: #e6e6e6;
+    font-size: 30px;
+    text-shadow: 0 0 1.2px white;
+    line-height: 120%;
+}
+
+.messageTitle {
+    align-self: center;
+    color: #ebebeb;
+    font-size: 40px;
+    padding: 13px;
+    margin-bottom: 15px;
+    border-radius: 1px;
+    width: 85%;
+    border-style: solid;
+    text-shadow: 0 0 2px #c7c7c7;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.messageTitleActive {
+    border-color: #e2e2e2;
+    background: #00803e;
+    box-shadow: 0 0 2px #e2e2e2;
+}
+
+.messageTitleDesactive {
+    border-color: #0f351b;
+    background: #122712;
+    box-shadow: 0 0 2px #0f3b1d;
+}
+
+/*****************************/
+
+@media screen and (max-width: 1000px) {
+    .box p {
+        font-size: 3vw
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .messageTitle {
+        font-size: 4vw;
+        height: 7vw;
+        padding: 1vw;
+    }
+}
